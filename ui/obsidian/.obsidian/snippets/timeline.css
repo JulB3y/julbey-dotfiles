@@ -1,0 +1,74 @@
+/* Horizontale Timeline – Container mit Scroll */
+.timeline-horizontal {
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+/* Flex-Reihe mit durchgehender Linie */
+.timeline-horizontal-inner {
+  position: relative;
+  display: flex;
+  gap: 3rem;
+  padding: 1.7rem 2rem 1rem;
+  min-width: max-content;
+}
+
+/* Linie */
+.timeline-horizontal-inner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 3rem;
+  height: 2px;
+  background: var(--text-normal);
+  opacity: 0.3;
+}
+
+.timeline-vert-line {
+    color: var(--text-muted);
+}
+
+/* Einzelner Punkt */
+.timeline-item {
+  position: relative;
+  min-width: 120px;
+  text-align: center;
+}
+
+/* 1. Label: Datum/Größe (über der Linie) */
+.timeline-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-normal);
+  margin-bottom: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+/* Punkt auf der Linie */
+.timeline-dot {
+  position: absolute;
+  top: 2.6rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: var(--interactive-accent);
+  border: 2px solid var(--background-primary);
+  box-shadow: 0 0 0 2px var(--interactive-accent);
+}
+
+/* 2. Label: Text (unter der Linie) */
+.timeline-content {
+  margin-top: 0.3rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.4rem;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  font-size: 0.9rem;
+}
+
+.timeline-content strong {
+  font-weight: 600;
+}

@@ -1,0 +1,5 @@
+ div[aria-label="Close window"]{ display: none !important; }
+
+div[aria-label="Minimize"]{ display: none !important; }
+
+div[aria-label="Restore down"]{ display: none !important; } 

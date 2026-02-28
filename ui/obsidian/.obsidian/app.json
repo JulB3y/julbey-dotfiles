@@ -1,0 +1,17 @@
+{
+  "attachmentFolderPath": "03 - ressources/98 - attachments",
+  "propertiesInDocument": "hidden",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "03 - ressources/97 - notes",
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 70
+  },
+  "vimMode": false,
+  "showLineNumber": false,
+  "readableLineLength": true
+}

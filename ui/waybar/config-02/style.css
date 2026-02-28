@@ -1,0 +1,195 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: JetBrains Mono;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+    margin: 4px;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: none;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+}
+
+/* you can set a style on hover for any module like this */
+#pulseaudio:hover {
+    background-color: #a37800;
+}
+
+#workspaces {
+    font-size: 16px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #4c4c4c;
+}
+
+#workspaces button:hover {
+    color: #9c9c9c;
+    box-shadow: none;
+    border: none;
+}
+
+#workspaces button.focused, #workspaces button.active {
+    color: #d1d1d1;
+}
+
+#workspaces button.urgent {
+    color: #eb4d4b;
+}
+
+#mode {
+}
+
+#battery,
+#backlight,
+#network,
+#pulseaudio,
+#power-profiles-daemon {
+    color: #ffffff;
+    padding: 4px;
+}
+
+#window,
+#workspaces {
+}
+
+.modules-left {
+    margin: 4px 0 4px 4px;
+    background-color: #1c1c1c;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.modules-center {
+    background-color: #1c1c1c;
+    padding: 4px;
+    margin: 4px 0 4px 4px;
+    border-radius: 8px;
+}
+
+.modules-right {
+    padding: 4px 0;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    margin: 4px 0 4px 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    font-size: 20px;
+    background-color: #4c4c4c;
+    border-radius: 8px;
+    margin: 4px 4px 0 4px;
+}
+
+#custom-power {
+    font-size: 16px;
+}
+
+
+#battery {
+    padding: 4px;
+}
+
+#battery.charging, #battery.plugged {
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#power-profiles-daemon {
+    padding-right: 15px;
+}
+
+#power-profiles-daemon.performance {
+}
+
+#power-profiles-daemon.balanced {
+}
+
+#power-profiles-daemon.power-saver {
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#backlight {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+menu {
+    border-radius: 8px;
+    background-color: #1c1c1c;
+    color: #FFFFFF;
+}
+
+#network {
+}
+
+#network.disconnected {
+}
+
+#pulseaudio {
+}
+
+#pulseaudio.muted {
+}

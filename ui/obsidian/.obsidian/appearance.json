@@ -1,0 +1,15 @@
+{
+  "cssTheme": "Minimal",
+  "accentColor": "#a0a6ab",
+  "interfaceFontFamily": "JetBrains Mono",
+  "textFontFamily": "JetBrains Mono",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "desmos-styling",
+    "rmv-topbar-buttons",
+    "timeline"
+  ],
+  "showRibbon": true,
+  "nativeMenus": true,
+  "translucency": false
+}

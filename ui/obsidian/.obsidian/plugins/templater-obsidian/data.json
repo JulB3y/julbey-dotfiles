@@ -1,0 +1,38 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "03 - ressources/99 - templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": false,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "04 - daily",
+      "template": "03 - ressources/99 - templates/daily note template.md"
+    }
+  ],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": "\\b(\\d{4}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])).*",
+      "template": "03 - ressources/99 - templates/daily note template.md"
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [
+    "03 - ressources/99 - templates/_template checkliste weekly uni s1.md"
+  ],
+  "startup_templates": [
+    "03 - ressources/99 - templates/sort daily.md"
+  ],
+  "intellisense_render": 1
+}
