@@ -1,6 +1,6 @@
-# variables
-WAYBARCONFIG="02" # choose prefered waybar config
-VAULT_PATH=~/Documents/ressources/vaults/Julius\ Vault/ #insert your obsidian vault path
+# load config
+SCRIPT_DIR="$(cd -- "$(dirname -- "$0")" && pwd)"
+source "$SCRIPT_DIR/paths.conf"
 
 # waybar conf copy
 cp ui/waybar/config-$WAYBARCONFIG/config.jsonc ~/.config/waybar/
