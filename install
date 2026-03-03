@@ -5,8 +5,7 @@ source "$SCRIPT_DIR/paths.conf"
 # waybar conf
 cp -r "$SCRIPT_DIR/ui/waybar/config-$WAYBARCONFIG/"* ~/.config/waybar/
 killall waybar
-waybar & disown
-
+waybar >/dev/null 2>&1 & disown
 
 # obsidian config copy
 cp -r "$SCRIPT_DIR/ui/obsidian/.obsidian" "$VAULT_PATH"
