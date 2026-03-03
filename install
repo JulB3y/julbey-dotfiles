@@ -2,6 +2,9 @@
 SCRIPT_DIR="$(cd -- "$(dirname -- "$0")" && pwd)"
 source "$SCRIPT_DIR/paths.conf"
 
+# keyd conf
+sudo cp -rf "$SCRIPT_DIR/system/keyd" /etc/
+
 # waybar conf
 cp -r "$SCRIPT_DIR/ui/waybar/config-$WAYBARCONFIG/"* ~/.config/waybar/
 killall waybar
