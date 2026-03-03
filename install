@@ -3,11 +3,11 @@ SCRIPT_DIR="$(cd -- "$(dirname -- "$0")" && pwd)"
 source "$SCRIPT_DIR/paths.conf"
 
 # waybar conf copy
-cp ui/waybar/config-$WAYBARCONFIG/config.jsonc ~/.config/waybar/
-cp ui/waybar/config-$WAYBARCONFIG/style.css ~/.config/waybar/
+cp "$SCRIPT_DIR/ui/waybar/config-$WAYBARCONFIG/config.jsonc" ~/.config/waybar/
+cp "$SCRIPT_DIR/ui/waybar/config-$WAYBARCONFIG/style.css" ~/.config/waybar/
 killall waybar
 waybar & disown
 
 
 # obsidian config copy
-cp -r ui/obsidian/.obsidian "$VAULT_PATH"
+cp -r "$SCRIPT_DIR/ui/obsidian/.obsidian" "$VAULT_PATH"
