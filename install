@@ -2,12 +2,14 @@
 SCRIPT_DIR="$(cd -- "$(dirname -- "$0")" && pwd)"
 source "$SCRIPT_DIR/paths.conf"
 
-# waybar conf copy
-cp "$SCRIPT_DIR/ui/waybar/config-$WAYBARCONFIG/config.jsonc" ~/.config/waybar/
-cp "$SCRIPT_DIR/ui/waybar/config-$WAYBARCONFIG/style.css" ~/.config/waybar/
+# waybar conf
+cp -r "$SCRIPT_DIR/ui/waybar/config-$WAYBARCONFIG/"* ~/.config/waybar/
 killall waybar
 waybar & disown
 
 
 # obsidian config copy
 cp -r "$SCRIPT_DIR/ui/obsidian/.obsidian" "$VAULT_PATH"
+
+# hyprland config
+cp -r "$SCRIPT_DIR/system/hypr/" ~/.config/
