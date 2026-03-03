@@ -1,0 +1,10 @@
+# copies all the files from default directories into this repo
+SCRIPT_DIR="$(cd -- "$(dirname -- "$0")" && pwd)"
+source "$SCRIPT_DIR/paths.conf"
+
+
+# keyd config
+cp /etc/keyd/hypr-keyd.conf "$SCRIPT_DIR/system/keyd"
+
+# obsidian config
+cp -r "$VAULT_PATH/.obsidian/" "$SCRIPT_DIR/ui/obsidian"
