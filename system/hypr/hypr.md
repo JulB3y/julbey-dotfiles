@@ -24,3 +24,8 @@ Sub configs are:
 │   ├── ...
 ```
 
+### fixes, tips and tricks
+#### Ghostty - keyboard compose layer
+Ghostty used to not be able to write symbols from the compose layer (e.g. ü with Compose + u + "). 
+Its a problem with the newer GTK versions. 
+To fix add environment variable with: `env = GTK_IM_MODULE,simple` to your hyprland config or export the environment variable through your preferred way.
