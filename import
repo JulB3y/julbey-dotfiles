@@ -14,3 +14,6 @@ cp -r "$VAULT_PATH/.obsidian/" "$SCRIPT_DIR/ui/obsidian"
 
 # hyprland
 cp -r ~/.config/hypr/* "$SCRIPT_DIR/system/hypr"
+
+# ghostty config
+cp -r ~/.config/ghostty/* "$SCRIPT_DIR/ui/ghostty"
