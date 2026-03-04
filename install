@@ -1,20 +1,9 @@
-# load config
+# load paths
 SCRIPT_DIR="$(cd -- "$(dirname -- "$0")" && pwd)"
 source "$SCRIPT_DIR/paths.conf"
 
-# keyd conf
-sudo cp -rf "$SCRIPT_DIR/system/keyd" /etc/
+exec "$SCRIPT_DIR/export"
 
-# waybar conf
-cp -r "$SCRIPT_DIR/ui/waybar/config-$WAYBARCONFIG/"* ~/.config/waybar/
 killall waybar
 waybar >/dev/null 2>&1 & disown
 
-# obsidian config copy
-cp -r "$SCRIPT_DIR/ui/obsidian/.obsidian" "$VAULT_PATH"
-
-# hyprland config
-cp -r "$SCRIPT_DIR/system/hypr/" ~/.config/
-
-# ghossty config
-cp -r "$SCRIPT_DIR/ui/ghossty/"* ~/.config/ghostty/
