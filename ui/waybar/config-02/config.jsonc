@@ -1,42 +1,47 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
     "position": "left", // Waybar position (top|bottom|left|right)
-    //"height": 1800, // Waybar height (to be removed for auto height)
     "width": 40, // Waybar width
     "spacing": 2, // Gaps between modules (4px)
-    "reload_style_on_change": true,
     // Choose the order of the modules
     "modules-left": [
-        "custom/power",     
+        "custom/power"
     ],
     "modules-center": [
-        "hyprland/workspaces",
+        "hyprland/workspaces"
     ],
     "modules-right": [
-       "battery",
+        "battery",
         "pulseaudio",
         "network",
         "power-profiles-daemon",
         "backlight",
-        "clock",
+        "clock"
     ],
-
-"custom/power": {
-    "format" : "⏻",
+    "custom/power": {
+        "format": "⏻",
         "tooltip": false,
-        "on-click": "wlogout",
-},
-
+        "on-click": "wlogout"
+    },
     "clock": {
         "format": "{0:%H}\n{0:%M}",
         "format-alt": "{0:%d}\n{0:%m}\n{0:%y}",
-        "tooltip": false,
+        "tooltip": false
     },
-   "backlight": {
+    "backlight": {
         // "device": "acpi_video1",
         "format": "{icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
     "battery": {
         "states": {
@@ -48,21 +53,25 @@
         "format-full": "{icon}",
         "format-charging": "",
         "format-plugged": "",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "on-click": "ghostty --title=\"btop\" -e btop",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
-   "power-profiles-daemon": {
-      "format": "{icon}",
-      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-      "tooltip": true,
-      "format-icons": {
-        "default": "",
-        "performance": "",
-        "balanced": "",
-        "power-saver": ""
-      }
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
     },
     "network": {
         "format-wifi": "",
@@ -70,15 +79,20 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "",
         "format-disconnected": "⚠",
+        "on-click": "ghostty --title=\"wifi-topbar\" --confirm-close-surface=false -e \"impala\" "
     },
     "pulseaudio": {
         "format": "{icon}",
         "format-icons": {
-            "default": ["", "", ""]
+            "default": [
+                "",
+                "",
+                ""
+            ]
         },
         "on-click": "pavucontrol"
     },
     "hyprland/workspaces": {
-        "format": "",
-    },
+        "format": ""
+    }
 }
