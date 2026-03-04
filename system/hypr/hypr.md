@@ -8,7 +8,7 @@ Sub configs are:
 
 ```bash
 ├── hypr
-│   ├── hypridle.conf
+│   ├── ...
 │   ├── hyprland
 │   │   ├── animations.conf
 │   │   ├── autostart.conf
@@ -21,7 +21,6 @@ Sub configs are:
 │   │   ├── stdprogram.conf
 │   │   └── windowrules.conf
 │   ├── hyprland.conf
-│   ├── hyprlock.conf
-│   └── hyprpaper.conf
+│   ├── ...
 ```
 
