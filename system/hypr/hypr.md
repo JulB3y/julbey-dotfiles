@@ -10,17 +10,17 @@ Sub configs are:
 ├── hypr
 │   ├── ...
 │   ├── hyprland
-│   │   ├── animations.conf
-│   │   ├── autostart.conf
-│   │   ├── deco.conf
-│   │   ├── env.conf
-│   │   ├── general.conf
-│   │   ├── input.conf
-│   │   ├── keybinds.conf
-│   │   ├── monitor.conf
-│   │   ├── stdprogram.conf
-│   │   └── windowrules.conf
-│   ├── hyprland.conf
+│   │   ├── animations.conf   # animations config 
+│   │   ├── autostart.conf    # services and applications to start with hyprland
+│   │   ├── deco.conf         # decoration config
+│   │   ├── env.conf          # environment variables
+│   │   ├── general.conf      # general, misc, dwindle
+│   │   ├── input.conf        # input config
+│   │   ├── keybinds.conf     # keybinds and modifier config
+│   │   ├── monitor.conf      # monitor setup
+│   │   ├── stdprogram.conf   # standard applications (e.g. browser->firefox, etc)
+│   │   └── windowrules.conf  # windowrules
+│   ├── hyprland.conf         # config sourcing all the other .conf files
 │   ├── ...
 ```
 
