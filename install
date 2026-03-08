@@ -7,3 +7,5 @@ source "$SCRIPT_DIR/paths.conf"
 killall waybar
 waybar >/dev/null 2>&1 & disown
 
+killall hyprpaper
+hyprpaper >/dev/null 2>&1 & disown

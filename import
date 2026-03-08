@@ -17,3 +17,6 @@ cp -r ~/.config/hypr/* "$SCRIPT_DIR/system/hypr"
 
 # ghostty config
 cp -r ~/.config/ghostty/* "$SCRIPT_DIR/ui/ghostty"
+
+# limine
+sudo cp /boot/limine.conf "$SCRIPT_DIR/system/limine.conf"

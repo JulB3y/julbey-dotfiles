@@ -7,6 +7,10 @@ source "$SCRIPT_DIR/paths.conf"
 # keyd conf
 sudo cp -rf "$SCRIPT_DIR/system/keyd" /etc/
 
+# wallpaper
+sudo cp "$SCRIPT_DIR/wallpaper/$WALLPAPER" /usr/share/wallpapers/wallpaper.png
+sudo cp "$SCRIPT_DIR/wallpaper/$WALLPAPER" /boot/wallpaper.png
+
 # waybar conf
 cp -r "$SCRIPT_DIR/ui/waybar/config-$WAYBARCONFIG/"* ~/.config/waybar/
 
@@ -16,5 +20,9 @@ cp -r "$SCRIPT_DIR/ui/obsidian/.obsidian" "$VAULT_PATH"
 # hyprland config
 cp -r "$SCRIPT_DIR/system/hypr/" ~/.config/
 
+
 # ghossty config
 cp -r "$SCRIPT_DIR/ui/ghostty/"* ~/.config/ghostty/
+
+# limine
+sudo cp "$SCRIPT_DIR/system/limine.conf" /boot/
