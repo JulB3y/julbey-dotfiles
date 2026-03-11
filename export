@@ -8,8 +8,8 @@ source "$SCRIPT_DIR/paths.conf"
 sudo cp -rf "$SCRIPT_DIR/system/keyd" /etc/
 
 # wallpaper
-sudo cp "$SCRIPT_DIR/wallpaper/$WALLPAPER" /usr/share/wallpapers/wallpaper.png
-sudo cp "$SCRIPT_DIR/wallpaper/$WALLPAPER" /boot/wallpaper.png
+sudo cp "$SCRIPT_DIR/wallpaper/$WALLPAPER" /usr/share/wallpapers/wallpaper.jpg
+sudo cp "$SCRIPT_DIR/wallpaper/$WALLPAPER" /boot/wallpaper.jpg
 
 # waybar conf
 cp -r "$SCRIPT_DIR/ui/waybar/config-$WAYBARCONFIG/"* ~/.config/waybar/
