@@ -53,7 +53,7 @@
         "format-full": "{icon}",
         "format-charging": "",
         "format-plugged": "",
-        "on-click": "ghostty --title=\"btop\" -e btop",
+        "on-click": "ghostty --title=\"btop\" --confirm-close-surface=false -e btop",
         "format-icons": [
             "",
             "",
