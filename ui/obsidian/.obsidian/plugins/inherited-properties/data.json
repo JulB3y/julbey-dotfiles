@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "properties": [
+    {
+      "key": "area",
+      "enabled": true,
+      "triggerValues": []
+    },
+    {
+      "key": "modul",
+      "enabled": true,
+      "triggerValues": []
+    }
+  ]
+}

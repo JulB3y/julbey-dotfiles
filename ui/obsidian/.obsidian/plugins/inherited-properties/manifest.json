@@ -1,0 +1,9 @@
+{
+	"id": "inherited-properties",
+	"name": "Inherited Properties",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "Automatically inherit frontmatter properties from parent notes when creating new notes via links.",
+	"author": "JulBey",
+	"isDesktopOnly": false
+}

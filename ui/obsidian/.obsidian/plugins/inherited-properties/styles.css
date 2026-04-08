@@ -1,0 +1,75 @@
+.inherited-properties-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.inherited-properties-header h3 {
+	margin: 0;
+}
+
+.inherited-properties-header button {
+	flex-shrink: 0;
+}
+
+.inherited-properties-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+	margin-bottom: 1em;
+}
+
+.inherited-property-row {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	background-color: var(--background-secondary);
+	border-radius: var(--radius-s);
+	padding: 0.5em 0.75em;
+}
+
+.inherited-prop-toggle {
+	flex-shrink: 0;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.inherited-prop-key,
+.inherited-prop-triggers {
+	background: var(--background-modifier-border);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-s);
+	color: var(--text-normal);
+	padding: 0.3em 0.5em;
+	font-size: var(--font-ui-small);
+}
+
+.inherited-prop-key {
+	min-width: 120px;
+	max-width: 160px;
+}
+
+.inherited-prop-triggers {
+	flex-grow: 1;
+	min-width: 140px;
+}
+
+.inherited-prop-delete {
+	flex-shrink: 0;
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	border: none;
+	color: var(--text-muted);
+	cursor: pointer;
+	padding: 0.25em;
+	border-radius: var(--radius-s);
+}
+
+.inherited-prop-delete:hover {
+	background: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
