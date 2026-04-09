@@ -1,5 +1,7 @@
- div[aria-label="Close window"]{ display: none !important; }
+.titlebar-button-container{ 
+ display: none !important;
+ }
 
-div[aria-label="Minimize"]{ display: none !important; }
-
-div[aria-label="Restore down"]{ display: none !important; } 
+.workspace-tab-header-container {
+    padding-right: 0.5em !important;
+}
