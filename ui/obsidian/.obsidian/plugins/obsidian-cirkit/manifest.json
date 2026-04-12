@@ -1,0 +1,9 @@
+{
+  "id": "obsidian-cirkit",
+  "name": "CirKIT",
+  "version": "0.1.0",
+  "minAppVersion": "1.0.0",
+  "description": "Render electrical circuit diagrams from DSL syntax",
+  "author": "JulBey",
+  "isDesktopOnly": false
+}
